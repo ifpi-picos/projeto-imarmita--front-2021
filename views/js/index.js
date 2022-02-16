@@ -7,6 +7,7 @@ function getUser() {
 
 function cleanUser() {
     localStorage.removeItem('username')
+    localStorage.removeItem('id')
     document.cookie = "token=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=; path=/";
 }
 

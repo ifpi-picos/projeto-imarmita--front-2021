@@ -43,12 +43,13 @@ body {
   }
 .entrance{
   position: absolute;
-  top: 0px;
+  top: -18px;
   left: 0px;
+  font-size: 15px;
   pointer-events: none;
   transition: 0.5s;
 }
-.inputUser:focus ~ .entrance{
+/* .inputUser:focus ~ .entrance{
   top: -20px;
   font-size: 12px;
-}
+} */

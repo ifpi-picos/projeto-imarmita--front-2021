@@ -101,7 +101,7 @@ async function sendDataToAPILogin (login) {
     localStorage.setItem('username', JSON.stringify(user.name))
     window.location.href = '/views/userList.html'
   } else {
-    const {message} = await response.json()
+    const { message } = await response.json()
     alert(message)
     clearForm()
     document.getElementById('email').focus()
@@ -119,7 +119,7 @@ async function sendDataToAPISignup (user) {
     body: JSON.stringify(user)
   })
 
-  if (response.status === 201) {    
+  if (response.status === 201) {
     window.alert('Efetue o login para começar.')
     window.location.href = '/views/login.html'
   } else {
