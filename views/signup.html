@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/signUp.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <fieldset>
+          <legend><b>Cadastre-se</b></legend>
+          <br /><br />
+          <select name="profileType" id="profileType">
+            <option value="1">Empresa</option>
+            <option value="2" selected>Consumidor</option>
+          </select>
+          <br /><br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="inputUser"
+              required
+            />
+            <label for="name" class="labelInput">Nome completo</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputUser"
+              required
+            />
+            <label for="email" class="labelInput">Email</label>
+          </div>
+          <br />
+          <div class="inputBox">
+            <label for="phone">Telefone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="input-phone"
+              pattern="[0-9]{11}|[0-9]{10}"
+              required
+              placeholder="somente números"
+            />
+          </div>
+          <br />
+          <div class="inputBox" id="dDescription"></div>
+          <br />
+          <div class="inputBox">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="senha1"
+              id="password"
+              name="password"
+              required
+            />
+            <br />
+            <br />
+            <label for="password">Confirmar Senha</label>
+            <input
+              type="password"
+              name="senha2"
+              id="confirm-password"
+              name="password"
+              required
+            />
+          </div>
+          <br />
+          <br />
+          <!-- <button id="btnSignUp"><a href="views\userlist.html">Cadastrar</a></button> -->
+          <button id="btnSignIn">
+            <a id="btnSignInLnk" href="/views/login.html">Voltar para Login</a>
+          </button>
+          <button id="btnSignUp">Cadastrar</button>
+        </fieldset>
+      </form>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

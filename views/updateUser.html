@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/updateUser.css">
+    <title>Atualizar Cadrasto</title>
+</head>
+<body>
+          <div class="register">
+            <form>
+            <fieldset>
+            <legend><b>Atualizar Cadrasto</b></legend>
+            
+            <br /><br />
+            <div class="inputBin">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="inputUser"
+                  required
+                />
+                <label for="name" class="entrance ">Nome completo</label>
+              </div>
+            <br>
+           
+            <div class="inputBin">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="inputUser"
+                  required
+                />
+                <label for="email" class="entrance">Email</label>
+              </div>
+              <br /> 
+              <div class="inputBin">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="input-phone"
+                  pattern="[0-9]{11}|[0-9]{10}"
+                  required
+                  placeholder="somente números"
+                />
+              </div>
+              
+              <div class="inputBox" id="dDescription"></div>
+              <br>
+              <div class="inputBin" id="dDescription"></div>
+              <br />
+              <div class="inputBin">
+                <label for="password">Senha</label>
+                <input
+                  type="password"
+                  name="senha1"
+                  id="password"
+                  name="password"
+                  required
+                />
+                <br />
+                <br />
+                <label for="password">Confirmar Senha</label>
+                <input
+                  type="password"
+                  name="senha2"
+                  id="confirm-password"
+                  name="password"
+                  required
+                />
+              </div>
+              <br />
+              <br />
+              <button id="btnSignIn">
+                <a id="btnSignInLnk">Salvar</a>
+              </button>
+            </form>
+
+           </div>
+        </fieldset>
+        
+</body>
+</html>
